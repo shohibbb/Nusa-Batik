@@ -1,4 +1,23 @@
-nav {
+.bg-image img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.up-button {
   display: flex;
-  justify-content: end;
+  place-content: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+label {
+  display: inline;
+  text-transform: uppercase;
+  color: aquamarine;
+  background: white;
+  text-align: center;
+  padding: 15px 40px;
+  cursor: pointer;
 }
