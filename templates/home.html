@@ -1,0 +1,166 @@
+{% extends 'layout/layout.html' %}
+
+{% block content %}
+<!-- main menu -->
+<div class="bg-image">
+  <img src="../static/img/main bg.png" alt="bg-image" />
+  <div class="position-absolute top-50 start-50 translate-middle">
+    <h1 class="text-center">
+      Identifikasi motif batik yang Anda temukan disini
+    </h1>
+    <form id="myForm" action="/process" method="post" style="display: flex; justify-content: center;" enctype="multipart/form-data" >
+      <input type="file" id="up-box" class="up-box" />
+      <label for="up-box">Upload gambar disini</label>
+    </form>
+  </div>
+</div>
+<!-- menu artikel -->
+<div class="Article">
+  <h1 class="text-center pt-3">Artikel Tentang Batik Indonesia</h1>
+  <p class="text-center pb-3">
+    Let’s to be a part of suistanable choices for future
+  </p>
+  <div class="container text-start">
+    <div class="row p-3">
+      <div class="col">
+        <img src="../static/img/event satu.png" alt="Acara 1" class="rounded" width="260" height="160" />
+        <h4 class="text-start">Event Campaigns</h4>
+        <p class="lh-sm">
+          Take tangible action by joining our tree-planting campaigns. Every
+          tree planted is a step towards a greener, more sustainable future
+        </p>
+        <button class="my-button">Klik Saya</button>
+      </div>
+      <div class="col">
+        <img src="../static/img/event dua.png" alt="Acara 2" class="rounded" width="260" height="160" />
+        <h4 class="text-start">Educational Outreachns</h4>
+        <p class="lh-sm">
+          Knowledge is the key to change. Explore our educational resources
+          to deepen your understanding of mangroves and share the wisdom
+          with your community.
+        </p>
+        <button class="my-button">Klik Saya</button>
+      </div>
+      <div class="col">
+        <img src="../static/img/event tiga.png" alt="Acara 3" class="rounded" 2" width="260" height="160" />
+        <h4 class="text-start">Community Action</h4>
+        <p class="lh-sm">
+          Take tangible action by joining our tree-planting campaigns. Every
+          tree planted is a step towards a greener, more sustainable futuree
+        </p>
+        <button class="my-button">Klik Saya</button>
+      </div>
+      <div class="col">
+        <img src="../static/img/event empat.png" alt="Acara 3" class="rounded" 2" width="260" height="160" />
+        <h4 class="text-start">Batik to World</h4>
+        <p class="lh-sm">
+          Take tangible action by joining our tree-planting campaigns. Every
+          tree planted is a step towards a greener, more sustainable future
+        </p>
+        <button class="my-button">Klik Saya</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- menu community -->
+<div class="Community pt-5">
+  <div class="container text-start p-5">
+    <div class="row">
+      <div class="col">
+        <img src="../static/img/community.png" alt="community" width="700" height="552" />
+      </div>
+      <div class="col">
+        <h1 class="motif">Setiap Motif, punya makna</h1>
+        <div class="row">
+          <div class="col-md-auto">
+            <img src="../static/img/jigsaw icon.png" alt="join" width="52" height="52" />
+          </div>
+          <div class="col">
+            <h5>join Our Community</h5>
+            <p>Let’s connect and share an ideas for suistanable future</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-auto">
+            <img src="../static/img/heart icon.png" alt="join" width="52" height="52" />
+          </div>
+          <div class="col">
+            <h5>Bring Batik’s to the World</h5>
+            <p>One contribution towards a sustainable future</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- testimoni -->
+<div class="testimoni">
+  <h3 class="text-center">What People Say</h3>
+  <p class="text-center">Cultural and Beauty for Batik</p>
+  <div class="container text-start">
+    <div class="row">
+      <div class="col border m-2">
+        <p>
+          "Our community has benefited immensely from the collaborative
+          efforts with This partnership has not only improved our forest's
+          health.”
+        </p>
+        <div class="row">
+          <div class="col-md-auto">
+            <img class="round-image" src="../static/img/Alex C.png" alt="profile" width="47" height="47" />
+          </div>
+          <div class="col">
+            <h6>Alex C</h6>
+            <p>Local Community Leader</p>
+          </div>
+        </div>
+      </div>
+      <div class="col border m-2">
+        <p>
+          Joined this community and can't recommend it enough! Every action,
+          and contributes to a greener future. Let's be the change our
+          planet needs! 🌳💚
+        </p>
+        <div class="row">
+          <div class="col-md-auto">
+            <img class="round-image" src="../static/img/Dannete P.png" alt="profile" width="52" height="52" />
+          </div>
+          <div class="col">
+            <h6>Alex C</h6>
+            <p>Local Community Leader</p>
+          </div>
+        </div>
+      </div>
+      <div class="col border m-2">
+        <p>
+          It's heartening to see an organization that understands the
+          interconnectedness of all life forms. Let's stand united for the
+          preservation of our planet's biodiversity!
+        </p>
+        <div class="row">
+          <div class="col-md-auto">
+            <img class="round-image" src="../static/img/Clara.png" alt="profile" width="52" height="52" />
+          </div>
+          <div class="col">
+            <h6>Alex C</h6>
+            <p>Local Community Leader</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Subrek -->
+<div class="subcribe">
+  <div class="container text-center">
+    <h2>Subscribe to our newsletter</h2>
+    <p>Every piece of information delivered is the key to awareness</p>
+    <div class="wrapper">
+      <input type="text" placeholder="email addreess" /><button>
+        send
+      </button>
+    </div>
+  </div>
+</div>
+{% endblock %}

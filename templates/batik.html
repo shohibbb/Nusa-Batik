@@ -1,0 +1,48 @@
+{% extends 'layout/layout.html' %}
+
+{% block content %}
+<style>
+    .hero-card {
+        width: 1200px;
+        height: 400px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .hero-img {
+        min-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+</style>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h2>{{ article.nama_batik }}</h2>
+            <h5> Perkiraan tahun ditemukan : {{ article.tahun_diciptakan }}</h5>
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="card hero-card">
+                        <img src="../static/img/imgBatik/{{ article.gambar_batik }}" class="card-img-top hero-img"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+            <article class="my-5 fs-5">
+                <p>{{ article.makna_batik }}</p>
+                <p>{{ article.sejarah }}</p>
+                <p>{{ article.jenis_batik }}</p>
+                <p>{{ article.penggunaan }}</p>
+            </article>
+            <div class="mb-5"><button type="button" class="my-button" id="backButton">Back</button></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("backButton").onclick = function () {
+        window.location.href = "/article";
+    };
+</script>
+{% endblock %}
