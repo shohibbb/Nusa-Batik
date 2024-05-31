@@ -42,9 +42,9 @@ def article():
 def process():
     
     if data is not None:
-        return render_template('article.html', data=s_data)
+        return render_template('home.html')
     else:
-        return render_template('article.html', message='Data tidak ditemukan')
+        return render_template('home.html', message='Data tidak ditemukan')
 
 if __name__ == '__main__':
     app.run(debug=True)

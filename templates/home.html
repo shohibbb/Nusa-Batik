@@ -8,10 +8,16 @@
     <h1 class="text-center">
       Identifikasi motif batik yang Anda temukan disini
     </h1>
-    <form id="myForm" action="/process" method="post" style="display: flex; justify-content: center;" enctype="multipart/form-data" >
-      <input type="file" id="up-box" class="up-box" />
-      <label for="up-box">Upload gambar disini</label>
-    </form>
+    <div class="up-button">
+      <form id="myForm" action="/process" method="post" enctype="multipart/form-data">
+        <input type="file" id="up-box" class="up-box" name="upload"/>
+        <label for="up-box">
+          <img src="../static/img/upload icon.png" alt="Upload Icon" />
+          Upload gambar disini
+          <span class="continue-button">Continue</span>
+        </label>
+      </form>
+    </div>
   </div>
 </div>
 <!-- menu artikel -->
@@ -156,11 +162,20 @@
   <div class="container text-center">
     <h2>Subscribe to our newsletter</h2>
     <p>Every piece of information delivered is the key to awareness</p>
-    <div class="wrapper">
-      <input type="text" placeholder="email addreess" /><button>
-        send
-      </button>
+    <div class="d-flex justify-content-center">
+      <div class="input-container">
+        <input type="text" placeholder="Email address" />
+        <button class="send-button">Send</button>
+      </div>
     </div>
   </div>
 </div>
+<script>
+  var fileInput = document.getElementById("up-box");
+  var form = document.getElementById("myForm");
+  
+  fileInput.addEventListener("change", function(event) {
+    form.submit();
+  });
+  </script>
 {% endblock %}

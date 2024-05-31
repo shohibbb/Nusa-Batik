@@ -1,7 +1,23 @@
 {% extends 'layout/layout.html' %}
 
 {% block content %}
+<style>
+    .card-img-top {
+        min-width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 
+    .card-body {
+        height: 200px;
+        flex-direction: column;
+    }
+
+    .my-button {
+        margin-top: auto;
+        align-self: flex-start;
+    }
+</style>
 <div class="container ">
     <div class="row">
         {% for batik in data %}

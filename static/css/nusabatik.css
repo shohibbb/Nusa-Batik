@@ -7,6 +7,25 @@
   display: flex;
   place-content: center;
 }
+.up-button img {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  justify-content: left;
+}
+.up-button label {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.continue-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #76453b;
+  color: white;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-right: auto;
+}
 
 input[type="file"] {
   display: none;
@@ -14,8 +33,8 @@ input[type="file"] {
 label {
   display: inline;
   text-transform: uppercase;
-  color: white;
-  background: #76453b;
+  color: #76453b;
+  background: #ffffff;
   text-align: center;
   padding: 15px 40px;
   cursor: pointer;
@@ -59,30 +78,34 @@ h1 .motif {
   color: #ffffff;
   margin: 100px;
   border-radius: 30px;
-}
-.wrapper {
-  width: 400px;
-  max-width: 100%;
-  position: relative;
+  padding: 20px;
 }
 
-.wrapper input {
+.input-container {
+  display: flex;
+  justify-self: center;
+  border-radius: 30px;
   background-color: #ffffff;
-  border-radius: 50px;
-  padding: 1rem 2rem;
-  width: 100%;
-  position: relative;
 }
-.wrapper button {
+.input-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 30px 0 0 30px;
+  outline: none;
+  width: 350px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  margin: 5px;
   background-color: #76453b;
-  border-radius: 50%;
-  height: 50px;
-  aspect-ratio: 1;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform: translate(-20%);
+  color: #ffffff;
+  border-radius: 62px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
 }
+
 footer {
   align-items: center;
 }
