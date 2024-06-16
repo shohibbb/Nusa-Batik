@@ -1,0 +1,31 @@
+{% extends 'layout/layout.html' %}
+
+{% block content %}
+<script>
+    var highestPercentage = parseFloat("{{ predictions_with_percentages[0][1] }}");
+    var prediction = encodeURIComponent("{{ prediction }}");
+</script>
+<script src="{{ url_for('static', filename='js/prediction.js') }}"></script>
+<div class="result">
+    <h1 class="title">Hasil Prediksi</h1>
+    <div class="gambar">
+        {% if file_path %}
+        <img src="{{ '../static/img/' + file_path.split('/')[-1] }}" alt="Predicted Image" width="300" height="200">
+        {% endif %}
+    </div>
+    <p id="namabatik">Nama batik adalah batik {{ prediction }}</p>
+    <h4 id="model-prediksi">Model memprediksi dengan presentase :</h4>
+    <div class="prediksi" id="prediction-list">
+        {% for label, percentage in predictions_with_percentages %}
+        <p>{{ label }}: {{ percentage }}%</p>
+        {% endfor %}
+    </div>
+    <span id="percentage"></span>
+    <div class="article-button">
+        <button type="button" id="article-button">Artikel terkait</button>
+    </div>
+    <div class="back-button">
+        <button type="button" class="my-button" id="backButton">Back</button>
+    </div>
+</div>
+{% endblock %}

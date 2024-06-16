@@ -1,0 +1,5 @@
+# Ignore model files
+*.h5
+
+# Ignore virtual environment directory
+myenv/
