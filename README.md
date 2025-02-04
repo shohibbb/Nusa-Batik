@@ -63,6 +63,20 @@ Berikut adalah struktur direktori proyek **NUSA BATIK**:
 - **Python & TensorFlow/Keras** untuk implementasi model CNN.
 - **Flask/Django** sebagai backend untuk pemrosesan gambar.
 
+## 👥 Tim NUSA BATIK
+
+Proyek ini dikembangkan oleh tim **NUSA BATIK**, yang terdiri dari:
+
+👑 **Ayu Susilowati** - Team Leader & UI/UX Designer  
+📱 **Akmal Shahib Maulana** - Front-End Developer  
+💻 **I Gede Krisna Astika Nanda** - Back-End Developer  
+🧠 **Ambar Arum Prameswari** - Machine Learning Engineer  
+🤖 **Nurhasanah** - Machine Learning Engineer
+
+Kami bersama-sama mengembangkan **NUSA BATIK** untuk membantu melestarikan budaya batik melalui teknologi modern. Dengan keahlian di berbagai bidang, kami memastikan bahwa proyek ini dapat berjalan dengan optimal, mulai dari desain antarmuka, pengembangan sistem, hingga implementasi kecerdasan buatan untuk deteksi pola batik.
+
+Jika ingin terhubung atau berdiskusi lebih lanjut, silakan hubungi kami! 🚀
+
 ## Kontribusi
 
 Jika Anda tertarik untuk berkontribusi dalam pengembangan proyek ini, silakan fork repository ini dan ajukan pull request!
